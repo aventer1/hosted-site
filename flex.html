@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Display practice</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <style>
+        
+        /* ALL THE STYLES */
+        /* step 1
+            display: flex
+        */
+        
+        /*
+        .navigation-bar {
+            display: flex;
+            background-color: blueviolet;
+            justify-content: space-between;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            background-color: aqua;
+            width: 20%;
+        }
+        */
+        
+        /* step 2
+            flex-direction: column
+            flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+        */
+        
+        /* step 3
+            justify-content: flex-end;
+            justify-content: flex-start;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+        */
+        
+        /* step 4
+            // add different heights to each item then align them
+            align-items: center;
+        */
+        
+        /* step 5
+            // on one item only
+            align-self: flex-end;
+        */
+        
+        /* step 6
+            // add a bunch on items
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+        */
+        
+        /*
+            //  make a navigation bar
+        
+        */
+        
+        /*
+        #item-one {
+            width: 200px;
+        }
+    
+        #item-two {
+            width: 300px;
+        }
+        
+        #item-three {
+            width: 100px;
+            align-self: flex-start
+        }
+*/
+        
+        .navigation-bar {
+            background-color: purple;
+            display: flex;
+            justify-content: space-between;
+            width:100%;
+            position: fixed;
+            left:0;
+            top: 0;
+        }
+        
+        .flex-container {
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            background-color: firebrick;
+            margin: 25px;
+            width: 300px
+        }
+        
+        .flex-item {
+            background-color: seagreen;
+            margin: 5px;
+            flex-grow: 1;
+            color:  white;
+        }
+        
+        .logo {
+            background: white;
+            height: 30px;
+            width: 40px;
+            margin: 25px;
+            text-align: center
+        }
+        
+/*
+        .positioned {
+            background-color: burlywood;
+            position: relative;
+        }
+        
+        .absolutely-positioned {
+            position: absolute;
+            bottom: 40px;
+            background-color: aquamarine;
+            z-index: 1;
+        }
+*/
+        
+        body {
+            padding: 0 20px 20px;
+        }
+        
+    
+        
+        .website-body {
+            margin-top: 100px;
+        }
+        
+    </style>
+    <body>
+        
+        <div class="navigation-bar">
+            <div class="logo">
+                Logo
+            </div>
+            <div class="flex-container">
+                <div class="flex-item"> Item 1</div>
+                <div class="flex-item"> Item 2</div>  
+                <div class="flex-item" style="flex-grow:2"> Item 3</div>
+                <div class="flex-item"> Item 4</div>  
+            </div>        
+        </div>
+        <br>
+        
+        <div class="website-body">
+            <div class="image-list">
+                <div class="image">
+                    <img>
+                </div>
+            </div>
+
+        </div>            
+    </body>
+</html>
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Display practice</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <style>
+        /* ALL THE STYLES */
+        
+        .flex-blocks {
+            flex: 1 0 20%; /* explanation below */
+            margin: 5px;
+            height: 100px;
+            background-color: blue;
+        }
+        
+        .flex-holder {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        
+        .block-holder{  
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .blocks {
+            background-color: firebrick;
+            width: 25%;
+            display: inline-block;
+        }
+        
+        .content {
+            padding: 10px;
+            background-color: blueviolet;
+            height: 100px;
+            margin: 10px;
+        }
+        
+
+        body {
+            max-width: none;
+            margin: 0;
+            padding: 0;
+        }
+    
+    </style>
+    <body>
+        <div class="flex-holder">
+            <div class="flex-blocks">
+            </div>
+             <div class="flex-blocks">
+            </div>
+            <div class="flex-blocks">
+            </div>
+             <div class="flex-blocks">
+            </div>
+            <div class="flex-blocks">
+            </div>
+             <div class="flex-blocks">
+            </div>
+        </div>
+        <br>
+        
+        <div class="block-holder">
+            <div class="blocks">
+                <div class="content"></div>
+            </div>
+             <div class="blocks">
+                  <div class="content"></div>
+            </div>
+            <div class="blocks">
+                 <div class="content"></div>
+            </div>
+             <div class="blocks">
+                  <div class="content"></div>
+            </div>
+            <div class="blocks">
+                  <div class="content"></div>
+            </div>
+
+        </div>
+    </body>
+</html>
